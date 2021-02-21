@@ -1,0 +1,713 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	color: #333;
+	font: normal 10pt Arial,Helvetica,sans-serif;
+	background: #fff;
+}
+
+#page
+{
+	border-top: 7px solid #036;
+	padding:0px 70px;
+	overflow: hidden;
+}
+
+#page .page-inner {
+	padding: 30px;
+	padding-top: 0px;
+	overflow: hidden;
+	position:relative;
+}
+
+#header
+{
+	margin: 0;
+	padding: 0;
+	border-top: 3px solid #C9E0ED;
+}
+
+#content
+{
+    padding: 203px 30px 30px 30px;
+	border: 1px solid #036;
+	border-top: 0px;
+}
+
+#sidebar
+{
+	padding: 20px 20px 20px 0;
+}
+
+#footer
+{
+	padding: 10px;
+	margin: 10px 20px;
+	font-size: 0.8em;
+	text-align: center;
+	border-top: 1px solid #C9E0ED;
+}
+
+#logo
+{
+	padding: 10px 20px;
+	font-size: 200%;
+}
+
+#mainmenu
+{
+	background:white url(bg.gif) repeat-x left top;
+}
+
+#mainmenu ul
+{
+	padding:6px 20px 5px 20px;
+	margin:0px;
+}
+
+#mainmenu ul li
+{
+	display: inline;
+}
+
+#mainmenu ul li a
+{
+	color:#ffffff;
+	background-color:transparent;
+	font-size:12px;
+	font-weight:bold;
+	text-decoration:none;
+	padding:5px 8px;
+}
+
+#mainmenu ul li a:hover, #mainmenu ul li.active a
+{
+	color: #6399cd;
+	background-color:#EFF4FA;
+	text-decoration:none;
+}
+
+div.flash-error, div.flash-notice, div.flash-success
+{
+	padding:.8em;
+	margin-bottom:1em;
+	border:2px solid #ddd;
+}
+
+div.flash-error
+{
+	background:#FBE3E4;
+	color:#8a1f11;
+	border-color:#FBC2C4;
+}
+
+div.flash-notice
+{
+	background:#FFF6BF;
+	color:#514721;
+	border-color:#FFD324;
+}
+
+div.flash-success
+{
+	background:#E6EFC2;
+	color:#264409;
+	border-color:#C6D880;
+}
+
+div.flash-error a
+{
+	color:#8a1f11;
+}
+
+div.flash-notice a
+{
+	color:#514721;
+}
+
+div.flash-success a
+{
+	color:#264409;
+}
+
+div.form .rememberMe label
+{
+	display: inline;
+}
+
+div.view
+{
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid #C9E0ED;
+}
+
+div.breadcrumbs
+{
+	font-size: 0.9em;
+	padding: 5px 20px;
+}
+
+div.breadcrumbs span
+{
+	font-weight: bold;
+}
+
+div.search-form
+{
+	padding: 10px;
+	margin: 10px 0;
+	background: #eee;
+}
+
+.portlet
+{
+
+}
+
+.portlet-decoration
+{
+	padding: 3px 8px;
+	background: #B7D6E7;
+	border-left: 5px solid #6FACCF;
+}
+
+.portlet-title
+{
+	font-size: 12px;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+	color: #298dcd;
+}
+
+.portlet-content
+{
+	font-size:0.9em;
+	margin: 0 0 15px 0;
+	padding: 5px 8px;
+	background:#EFFDFF;
+}
+
+.portlet-content ul
+{
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	margin: 0;
+	padding: 0;
+}
+
+.portlet-content li
+{
+	padding: 2px 0 4px 0px;
+}
+
+.operations
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.operations li
+{
+	padding-bottom: 2px;
+}
+
+.operations li a
+{
+	font: bold 12px Arial;
+	color: #0066A4;
+	display: block;
+	padding: 2px 0 2px 8px;
+	line-height: 15px;
+	text-decoration: none;
+}
+
+.operations li a:visited
+{
+	color: #0066A4;
+}
+
+.operations li a:hover
+{
+	background: #80CFFF;
+}
+ 
+.like-a-button,
+input[type="submit"] {
+	  width:150px;
+	  border:0px;
+	  background:#036;
+	  line-height:16px;
+	  font-size:15px;
+	  padding:5px 10px;
+	  color:#fff;
+	  font-weight:bold;
+	  cursor:pointer;
+	  text-decoration:none;
+	  display:inline-block;
+	  text-align:center;
+		margin:0px;
+}
+
+
+.like-a-button:hover,
+input[type="submit"]:hover{
+	background:#f63;
+	  color:#fff;
+}
+
+.has-inline-buttons {
+	text-align:center;
+}
+
+.barattson-logo {
+  position:absolute;
+  top:78px;
+  left:50%;
+  margin-left:-130px;
+  width:260px;
+  height:90px;
+}
+
+table ,
+table tbody,
+table tr,
+table td{
+	margin:0px;
+	padding:0px;
+}
+
+.methods-page .col-1,
+.importantnotes-page .row-2 .col-1{
+  text-align:right;
+  padding-right:10px;
+  min-width: 75px;
+}
+
+.methods-page .col-2,
+.importantnotes-page .row-2 .col-2{
+  text-align:left;
+  padding-left:10px;
+}
+
+.importantnotes-page .row-2 td{
+  padding-top:30px;
+}
+
+.importantnotes-page .row-1  td{
+  font-size:14px;
+  text-align:justify;
+  padding:0px 30px 30px 30px;
+  border-bottom:2px solid #036;
+}
+
+#registr-form .table-1 {
+  width:400px;
+  margin:0px auto;
+  margin-bottom:30px;
+}
+
+#registr-form .table-1 .col-1{
+  width:50%;
+}
+
+#registr-form table td {
+  vertical-align:top;
+  height:32px;
+  line-height:32px;
+}
+
+#registr-form .table-1 input{
+  width:98%;
+}
+
+#registr-form .table-2{
+  border-top:1px dashed #036;
+}
+
+#registr-form .table-2 .col-1{
+  width:20px;
+  text-align:left;
+}
+
+#registr-form .table-2 .col-3{
+  width:120px;
+}
+
+#registr-form .table-2 .col-3 input {
+  width:95%;
+  text-align:center;
+}
+
+#registr-form .table-2 .col-4{
+  width:60px;
+  text-align:right;
+}
+
+#registr-form .row-8 td{
+  padding-top:30px;
+}
+
+#registr-form .row-17 td{
+  padding:30px 0px;
+  font-weight:bold;
+  text-align:right !important;
+}
+
+#registr-form .row-17 span {
+  color:#f63;
+}
+
+#registr-form .row-18 td{
+  text-align:center !important;
+  border-top:2px solid #036;
+  padding-top:30px;
+}
+
+.invoce .invoce-bottom {
+  display:none;
+}
+
+.invoce .invoce-top{
+  border-bottom:2px solid #036;
+  padding-bottom:30px;
+  margin-bottom:30px;
+}
+
+.invoce .table-3 td {
+  width:50%;
+}
+
+.invoce .table-3 .col-1 {
+  text-align:right;
+  padding-right:10px;
+}
+
+.invoce .table-3 .col-2 {
+  text-align:left;
+  padding-left:10px;
+}
+
+.invoce .table-1 {
+  width:400px;
+  margin:0px auto;
+}
+  
+.invoce .table-1 .col-1 {
+  font-weight: bold;
+  font-size: 15px;
+  color: #036;
+  width:180px;
+}
+
+.invoce .row-6 .col-2 {
+	text-transform:uppercase;
+}
+
+.invoce .table-1 td{
+  vertical-align:top;
+  height:32px;
+  line-height:32px;
+}
+
+.confirmtext,
+.page-error {
+	text-align:justify;
+	padding:0px 30px;
+}
+
+#payonline-form .table-1 td{
+  line-height:32px;
+  height:32px;
+  vertical-align:top;
+}
+
+#payonline-form .table-1 {
+  width:100%;
+}
+
+#payonline-form .table-1 .col-1 {
+    width:40%;
+    text-align:right;
+}
+
+#payonline-form .table-1 .row-7 .col-1 {
+    text-align:center;
+}
+
+#payonline-form .table-1 .col-1 label{
+    margin-right:10px;
+}
+
+#payonline-form .table-1 .col-2 {
+    width:60%;
+}
+
+#payonline-form .table-1 .col-2 input{
+  width:60%;
+}
+
+#payonline-form .row-5 input{
+  text-align:center;
+  width:80px !important;
+}
+
+#payonline-form .row-6 select{
+  width:84px;
+}
+
+
+#payonline-form .row-6 td{
+  padding-bottom:30px;
+}
+
+#payonline-form .row-7 td{
+  padding-top:30px;
+  text-align:center;
+  border-top:2px solid #036;
+}
+
+.cheking-details .table-1 td{
+  line-height:32px;
+  height:32px;
+  vertical-align:top;
+}
+
+.cheking-details .table-1 {
+  width:100%;
+}
+
+.cheking-details .table-1 .col-1 {
+    width:50%;
+    text-align:right;
+    font-size:15px;
+    color:#036;
+    font-weight:bold;
+    padding-right:10px;
+}
+
+.cheking-details .table-1 .col-2 {
+    width:50%;
+    font-size:15px;
+    padding-left:10px;
+}
+
+.cheking-details .row-5 input{
+  text-align:center;
+  width:80px !important;
+}
+
+.cheking-details .row-6 select{
+  width:84px;
+}
+
+
+.cheking-details .row-5 .col-1{
+  padding-bottom:30px;
+}
+
+.cheking-details .row-6 td{
+  padding-top:30px;
+  border-top:2px solid #036;
+}
+
+.progress-main {
+  position:absolute;
+  width:568px;
+  left:0px;
+  margin:15px 46px;
+  height:25px;
+  top:0px;
+  border:1px solid #036;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.progress-main .progress-line {
+  display:none;
+}
+
+.progress-main .step {
+  float:left;
+  width:102px;
+  padding-right:13px;
+  background:url(/sites/default/files/baratprogressbar.png) no-repeat right -1px;
+  height:23px;
+  line-height:23px;
+  font-size:11px;
+  white-space:nowrap;
+  font-weight:bold;
+  text-align:center;
+  color:#036;
+}
+
+.progress-main .step-5 {
+  padding-right:0px;
+  background:none;
+}
+
+.progress-main .step-1,
+.progress-main .step-5 {
+  width:103px;
+}
+
+.progress-main .step.active{
+  background:#f63 url(/sites/default/files/baratprogressbar.png) no-repeat right center;
+  color:#fff;
+}
+
+.progress-main .step.old {
+  background:#f63 url(/sites/default/files/baratprogressbar.png) no-repeat right -51px;
+  color:#fff;
+}
+
+.progress-main .step-5.active {
+  background:none;
+  background:#f63;
+}
+
+/*.progress-main {
+  position:absolute;
+  width:538px;
+  left:0px;
+  margin:25px 61px;
+  height:3px;
+  background:#036;
+  top:0px;
+}
+
+.progress-main .progres-line{
+  width:0%;
+  height:3px;
+  background:#f62;
+}
+
+.progress-main .step {
+  position:absolute;
+  top:-10px;
+  left:0px;
+  width:23px;
+  height:23px;
+  line-height:23px;
+  text-align:center;
+  color:#fff;
+  background:#036;
+  font-weight:bold;
+  margin-left:-12px;
+}
+
+.progress-main .step.old {
+  background:#f63;
+}
+
+.progress-main .step.active {
+  background:#f00;
+}
+
+.progress-main .step-2{
+  left:25%;
+}
+
+.progress-main .step-3{
+  left:50%;
+}
+
+.progress-main .step-4{
+  left:75%;
+}
+
+.progress-main .step-5{
+  left:100%;
+}
+
+.progress-main.page-2 .progres-line {
+	width:25%;
+}
+
+.progress-main.page-3 .progres-line {
+	width:50%;
+}
+
+.progress-main.page-4 .progres-line {
+	width:75%;
+}
+
+.progress-main.page-5 .progres-line {
+	width:100%;
+}*/
+
+.form-infos {
+	font-style:italic;
+	line-height:14px;
+	font-size:12px;
+}
+
+.for-view .table-1,
+.for-view .table-2{
+  width:500px;
+  margin:0px auto;
+}
+
+.for-view .table-1 .col-1 {
+  width:50%;
+  font-weight:bold;
+}
+
+.for-view .table-1,
+.for-view .table-2 {
+  line-height:20px;
+  font-size:13px;
+  vertical-align:top;
+}
+
+.for-view .view-middle {
+  margin-top:30px;
+  border-top:2px solid #036;
+  padding-top:30px;
+}
+
+.for-view .table-2 .col-2,
+.for-view .table-2 .col-3 {
+  text-align:center;
+  width:80px;
+}
+
+.for-view .table-2 .row-1 td {
+  font-weight:bold;
+}
+
+
+.for-view .table-2 .row-1 .col-1 {
+  padding-left:30px;
+}
+
+.for-view .view-bottom {
+  width:538px;
+  margin:30px auto;
+  padding:30px 0px;
+  text-align:center;
+  border-top:2px solid #036;
+  border-bottom:2px solid #036;
+}
+
+.for-view .view-bottom img{
+  width:auto;
+  max-height:300px;
+  display:inline-block;
+  max-width:500px;
+  border:1px solid #ccc;
+}
+
+.for-view .table-3 {
+  width:538px;
+}
+
+.for-view .table-3 td{
+  width:149px;
+  text-align:center;
+}

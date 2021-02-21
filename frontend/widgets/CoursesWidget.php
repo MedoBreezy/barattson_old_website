@@ -1,0 +1,28 @@
+<?php
+    namespace frontend\widgets;
+	
+    use Yii;
+    use yii\base\Widget;
+    use backend\models\Courses;
+    use common\components\HelperComponent;
+	
+    class CoursesWidget extends Widget {
+        public function init() {
+            parent::init();
+        }
+		
+        public function run() {
+            $lang = Yii::$app->language;
+            
+			$courses = Courses::find()
+                ->where(['lang' => $lang, 'status' => HelperComponent::itemsStatusEnabled])
+                ->andWhere(['not', ['image' => '']])
+                ->orderBy(['date_start' => SORT_DESC])
+                ->limit(3)
+                ->all();
+            
+			return $this->render('courses', [
+                'courses' => $courses,
+            ]);
+        }
+    }
